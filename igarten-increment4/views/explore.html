@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Idan Garten">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    <script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+    <div class="container">
+        <header class="header">
+            <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse museum logo">
+        </header>
+        <nav class="nav_bar">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="buytickets.html">Buy Tickets</a>
+        </nav>
+        <main class="main">
+            <h3>Mission Statement</h3>
+            <p>
+                MonoMuse is dedicated to exploring the dynamic intersection of art and technology, 
+                inspiring creativity, innovation, and dialogue through immersive exhibits and interactive experiences. 
+                Our mission is to showcase groundbreaking works that challenge traditional boundaries and 
+                invite visitors to engage with the evolving landscape of digital and artistic expression.
+            </p>
+            <p>
+                MonoMuse was founded in 2017 and was created to give motivation and inspiration to aspiring artists
+                and creators of all backgrounds.
+            </p>
+            <h3>Milestones</h3>
+            <ul>
+                <li>
+                    2018 - Grand Opening: MonoMuse opened its doors to the public, 
+                    debuting with a cutting-edge exhibition that blended digital art with interactive technology.
+                </li>
+                <li>
+                    2019 - First International Collaboration: Partnered with global artists and tech innovators to 
+                    present "The Future of Art," an exhibition that traveled across major cities.
+                </li>
+                <li>
+                    2021 - Launch of Virtual Exhibits: MonoMuse expanded its reach by launching an immersive 
+                    virtual gallery, allowing visitors from around the world to experience exhibitions remotely.
+                </li>
+                <li>
+                    2023 - Expansion of Educational Programs: Introduced a series of workshops and courses, 
+                    offering hands-on opportunities to learn about the fusion of art and technology for all ages.
+                </li>
+            </ul>
+        </main>
+        <figure class="main_figure">
+            <img src="../static/museum.jpg" alt="Could not display image" width="500" height="400">
+        </figure>
+        <footer class="footer"> 
+            <p id="copyYear"></p>
+        </footer>
+    </div>
+</body>
+</html>

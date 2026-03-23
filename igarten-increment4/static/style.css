@@ -1,0 +1,182 @@
+* {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    padding: 5px;
+    margin: 5px;
+    background: white;
+    color: #22333b;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    line-height: 1.5;
+    font-style: normal;
+}
+
+#logo {
+    width: 20%;
+    display: block;
+}
+
+nav > a {
+    text-decoration: none;
+    color: #3772ff;
+    font-weight: 300;
+    padding: 8px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+nav > a:hover {
+    border-color: black;
+}
+
+.active {
+    color: #ed0505;
+}
+
+.cta, #submit_checkout, #buy_now {
+    background-color: #987d7c;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    width: 200px;
+    height: 80px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+footer {
+    border-top: 1px solid #987d7c;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    color: #22333b;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: fit-content;
+  background-color: #987d7c;
+}
+
+tr:nth-child(odd) {
+    background-color:#987d7c;
+}
+
+form * {
+  margin: auto;
+  text-align: center;
+}
+
+.container {
+  display: grid; /* Turns this div into a CSS Grid layout */
+  grid-template-areas:   /* Defines the layout structure */
+    'header header'
+    'nav_bar nav_bar'
+    'main main-img'
+    'footer footer';
+}
+
+/* Places each element into the correct area of the grid */
+.header {
+   grid-area: header; 
+}
+.nav_bar {
+   grid-area: nav_bar;
+   display: flex;
+    justify-content: left;
+}
+.main {
+  grid-area: main;
+}
+.main_img {
+   grid-area: main-img; 
+}
+.footer {
+   grid-area: footer;
+}
+
+#long_pg {
+    display: none;
+}
+
+#read_more {
+    background-color: #987d7c;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 2px;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#read_less {
+    display: none;
+    background-color: #987d7c;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 2px;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.calendar {
+    margin-top: 20px;
+    border: 1px solid #987d7c;
+    border-radius: 10px;
+    padding: 10px;
+    width: 400px;
+    height: 400px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.calendar-day {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.calendar-day.selected {
+    border: 2px solid #3772ff;
+}
+
+.day-name {
+    font-weight: bold;
+    background-color: #987d7c;
+}
+
+.today {
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+.empty {
+    background-color: transparent;
+    border: none;
+}
+
+#purchase_form {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.calendar-day:hover {
+    border: 2px solid red;
+    cursor: pointer;
+}
+

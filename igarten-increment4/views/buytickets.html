@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Idan Garten">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    <script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+    <div class="container">
+        <header class="header">
+            <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse museum logo">
+        </header>
+        <nav class="nav_bar">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="buytickets.html">Buy Tickets</a>
+        </nav>
+        <main class="main">
+            <table>
+                <tr>
+                    <th>Ticket Type</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Adult</td>
+                    <td>General admission for ages 18+</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <td>Student</td>
+                    <td>Student ID required</td>
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <td>Member</td>
+                    <td>Member ID required</td>
+                    <td>$8</td>
+                </tr>
+            </table>
+            <div class="calendar">
+                <div class="calendar-header">
+                    <button onclick="changeMonth(-1)">Prev</button>
+                    <h2 id="monthYear">Month, Year</h2>
+                    <button onclick="changeMonth(1)">Next</button>
+                </div>
+                <div class="calendar-grid" id="calendar"></div>
+            </div>
+            <button id="buy_now">Buy Now</button>
+            <form id="purchase_form">
+                <div>
+                    <label>Name: (required)</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Email: (required)</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Ticket Quantity: (required)</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Selected Date: </label>
+                    <label id="selectedDate"></label>
+                </div>
+                <button id="submit_checkout">Submit</button>
+            </form>
+        </main>
+        <footer class="footer"> 
+            <p id="copyYear"></p>
+        </footer>
+    </div>
+</body>
+</html>
