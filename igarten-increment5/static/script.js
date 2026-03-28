@@ -173,9 +173,11 @@ function toggleMenu() {
 }
 
 function initMap() {
-    if(window.location.href != "explore.html"){
+    var mapelement = document.getElementById('map');
+    if (!mapelement) {
         return;
     }
+
     var map = L.map('map').setView([40.7128, -74.0060], 13);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
