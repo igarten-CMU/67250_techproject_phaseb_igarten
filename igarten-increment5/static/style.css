@@ -77,13 +77,14 @@ form * {
 }
 
 .hamburger {
+    font-size: x-large;
     border: none;
     display: none;
     border: 1px solid transparent;
     border-radius: 10px;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 800px) {
     .hamburger {
         display: block;
     }
