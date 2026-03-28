@@ -171,3 +171,19 @@ function toggleMenu() {
     var nav = document.querySelector(".nav_bar");
     nav.classList.toggle("responsive");
 }
+
+function initMap() {
+    if(window.location.href != "explore.html"){
+        return;
+    }
+    var map = L.map('map').setView([40.7128, -74.0060], 13);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+    L.marker([40.7128, -74.0060]).addTo(map)
+        .bindPopup("MonoMuse")
+        .openPopup();
+}
+
+initMap();

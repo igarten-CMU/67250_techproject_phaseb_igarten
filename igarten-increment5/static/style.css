@@ -209,7 +209,14 @@ form * {
 }
 
 iframe {
-    width: 400px;
-    height: 200px;
+    width: 600px;
+    height: 300px;
+}
+
+#map {
+    width: 600px;
+    height: 400px;
+    border: 1px solid #987d7c;
+    border-radius: 10px;
 }
 
